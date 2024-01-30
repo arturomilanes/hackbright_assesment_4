@@ -8,5 +8,8 @@ app.use(express.json());
 const controller = require('./controller')
 
 app.get("/api/compliment", controller.getCompliment);
+app.get("/api/fortune", controller.getFortune);
+app.get("/api/country", controller.getCountry);
+app.get("/api/color", controller.getColor);
 
-app.listen(4000, () => console.log("Server running on 4000"));
+app.listen(4001, () => console.log("Server running on 4001"));
