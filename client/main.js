@@ -54,7 +54,7 @@ const getCountry = () => {
 
 let mealImg = "";
 const getFood = () => {
-    axios.get("http://www.themealdb.com/api/json/v1/1/random.php")
+    axios.get("http://themealdb.com/api/json/v1/1/random.php")
     .then(res => {
         const data = res.data.meals[0].strMeal;
         restaurant.meal = data;
